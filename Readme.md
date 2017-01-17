@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Inga Minkevich](https://up.htmlacademy.ru/htmlcss/16/user/239522).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
