@@ -6,11 +6,14 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="container">
+  <div class="container">
+    <header class="main-header">
+
 
       <div class="logo">
-        <img src="img/logo.png" width="138" height="70">
+        <a href="#">
+          <img src="img/logo.png" width="138" height="70">
+        </a>
       </div>
 
       <nav class="main-navigation">
@@ -24,24 +27,25 @@
           <li>
             <a href="#">Карта штата</a>
           </li>
-          <li>
+          <li class="active">
             <a href="#">Гостиницы</a>
+            <!-- ссылку можно сделать некликабельной с помощью css. или лучше по-другому активный пункт меню разметить? -->
           </li>
 
         </ul>
       </nav>
 
-    </div>
-  </header>
 
-  <main>
-    <div class="container">
+    </header>
+
+    <main>
+
       <div class="settings">
         <form action="#" method="get">
 
-          <div class="checkboxes">
+          <div class="options">
             <fieldset>
-              <legend>ИНФРАСТРУКТУРА:</legend>
+              <legend>Инфраструктура:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
                   <input type="checkbox" id="chb-1" name="feature-1">
@@ -59,7 +63,7 @@
             </fieldset>
           </div>
 
-          <div class="checkboxes">
+          <div class="options">
             <fieldset>
               <legend>Тип жилья:</legend>
               <ul class="checkbox-list">
@@ -79,10 +83,10 @@
             </fieldset>
           </div>
 
-          <div class="range-block">
+          <div class="options">
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
-              <!--как это штуку с диапазоном цен сверстать? -->
+              <img src="img/price-range.png">
               <label>От
                 <input class="cost_field" type="text" name="cost_from">
               </label>
@@ -92,7 +96,7 @@
               <!--<input type="range" min="0"> -->
               <div class="range"></div> <!-- ползунок -->
             </fieldset>
-            <button class="show-btn" type="button">Показать</button>
+            <button class="show-btn" type="submit">Показать</button>
           </div>
 
         </form>
@@ -105,15 +109,18 @@
         <div class="sorting-settings">
           <p>Сортировка</p>
           <ul class="sorting-list">
-            <li><a class="sorting-type" href="#">По цене</a></li>
+            <li><a class="sorting-type active-type" href="#">По цене</a></li>
             <li><a class="sorting-type" href="#">По типу</a></li>
             <li><a class="sorting-type" href="#">По рейтингу</a></li>
           </ul>
         </div>
 
         <div class="sorting-indicator">
-          <span class="sort-down-up"></span>
-          <span class="sort-up-down"></span>
+          <ul class="indicators">
+            <li><a class="sort-down-up">снизу вверх</a></li>
+            <li><a class="sort-up-down active-indicator">сверху вниз</a></li>
+            <!-- текст в ссылках скрою в css-->
+          </ul>
         </div>
 
       </div>
@@ -124,16 +131,26 @@
           <img class="hotel-photo" src="img/hotel-1.jpg" width="135" height="90">
 
           <div class="hotel-descr">
+
             <h2 class="hotel-title">Amara Resort & Spa</h2>
-            <span class="hotel-info">Гостиница</span>
-            <span class="hotel-info">ОТ 3500 Р.</span>
-            <a class="btn hotel-about">Подробнее</a>
-            <a class="btn hotel-book">Забронировать</a>
+
+            <div class="info-container">
+              <span class="hotel-info">Гостиница</span>
+              <a class="btn hotel-about">Подробнее</a>
+            </div>
+
+            <div class="info-container">
+              <span class="hotel-info">От 3500 Р.</span>
+              <a class="btn hotel-book">Забронировать</a>
+            </div>
+
           </div>
 
           <div class="rating">
             <span class="rating-stars"></span>
-            <div class="rating-value"></div>
+            <div class="rating-value">
+              <span class="value">Рейтинг: 8,5</span>
+            </div>
           </div>
 
         </div>
@@ -142,16 +159,26 @@
           <img class="hotel-photo" src="img/hotel-2.jpg" width="135" height="90">
 
           <div class="hotel-descr">
+
             <h2 class="hotel-title">Desert Quail Inn</h2>
-            <span class="hotel-info">Мотель</span>
-            <span class="hotel-info">ОТ 2000 Р.</span>
-            <a class="btn hotel-about">Подробнее</a>
-            <a class="btn hotel-book">Забронировать</a>
+
+            <div class="info-container">
+              <span class="hotel-info">Мотель</span>
+              <a class="btn hotel-about">Подробнее</a>
+            </div>
+
+            <div class="info-container">
+              <span class="hotel-info">От 2000 Р.</span>
+              <a class="btn hotel-book">Забронировать</a>
+            </div>
+
           </div>
 
           <div class="rating">
             <span class="rating-stars"></span>
-            <div class="rating-value"></div>
+            <div class="rating-value">
+              <span class="value">Рейтинг: 8,9</span>
+            </div>
           </div>
 
         </div>
@@ -160,47 +187,59 @@
           <img class="hotel-photo" src="img/hotel-3.jpg" width="135" height="90">
 
           <div class="hotel-descr">
+
             <h2 class="hotel-title">Villas at Poco Diablo</h2>
-            <span class="hotel-info">Апартаменты</span>
-            <span class="hotel-info">ОТ 4000 Р.</span>
-            <a class="btn hotel-about">Подробнее</a>
-            <a class="btn hotel-book">Забронировать</a>
+
+            <div class="info-container">
+              <span class="hotel-info">Апартаменты</span>
+              <a class="btn hotel-about">Подробнее</a>
+            </div>
+
+            <div class="info-container">
+              <span class="hotel-info">От 4000 Р.</span>
+              <a class="btn hotel-book">Забронировать</a>
+            </div>
+
           </div>
 
           <div class="rating">
             <span class="rating-stars"></span>
-            <div class="rating-value"></div>
+            <div class="rating-value">
+              <span class="value">Рейтинг: 9,2</span>
+            </div>
           </div>
 
         </div>
       </div>
 
-    </div>
 
-  </main>
 
-  <footer class="main-footer">
+    </main>
 
-    <div class="container">
-      <div class="footer-hashtag">
-        <a class="hash" href="#">#visitsedona</a>
+    <footer class="main-footer">
+
+      <div class="container">
+        <div class="footer-hashtag">
+          <a class="hash" href="#">#visitsedona</a>
+        </div>
+
+        <div class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>Website by</p>
+          <a class="copyright" href="https://htmlacademy.ru">
+            <img src="img/ha-logo.png" href="https://htmlacademy.ru" alt="HTML Academy">
+          </a>
+        </div>
       </div>
 
-      <div class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </div>
+    </footer>
 
-      <div class="footer-copyright">
-        <p>WEBSITE by</p>
-        <a class="copyright" href="https://htmlacademy.ru">
-          <img src="img/ha-logo.png" href="https://htmlacademy.ru" alt="HTML Academy">
-        </a>
-      </div>
-    </div>
-
-  </footer>
+  </div>
 
 </body>
 </html>
