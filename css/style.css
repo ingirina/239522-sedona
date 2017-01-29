@@ -1,0 +1,27 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+  /* line-height, text-transform, font-family не задаю, они такие же, как у body, наследуются */
+}
+
+.blue h2,
+.blue p {
+  text-color: #ffffff;
+}
+
+.hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
