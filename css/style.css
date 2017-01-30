@@ -6,13 +6,13 @@ body {
   color: #333333;
   font-family: "PT Sans", "Arial", sans-serif;
 
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 }
 
-h2,
-h3 {
+.reason h2,
+.feature h3 {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
@@ -107,7 +107,12 @@ h3 {
   text-align: center;
 }
 
-p {
+.info-about,
+.reasons-about,
+.reason p,
+.feature p,
+.form-descr p,
+.search-block p {
   text-align: center;
 }
 
