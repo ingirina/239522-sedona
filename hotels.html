@@ -8,7 +8,7 @@
 
 <body>
   <div class="container">
-    <header class="main-header">
+    <header class="main-header clearfix">
 
 
       <div class="logo">
@@ -18,22 +18,28 @@
       </div>
 
       <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="active">
-            <a href="#">Гостиницы</a>
-            <!-- ссылку можно сделать некликабельной с помощью css. или лучше по-другому активный пункт меню разметить? -->
-          </li>
 
-        </ul>
+        <div class="menu-left">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-right">
+          <ul>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="active">
+              <a>Гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
 
@@ -41,7 +47,7 @@
 
     <main>
 
-      <div class="settings">
+      <div class="settings clearfix">
         <form action="#" method="get">
 
           <div class="options">
@@ -107,9 +113,12 @@
         </form>
       </div>
 
-      <div class="output-header">
+      <div class="output-header clearfix">
 
-        <p>Найдено: <output>3</output></p>
+
+        <div class="output-result">
+          <p>Найдено: <output>3</output></p>
+        </div>
 
         <div class="sorting-settings">
           <p>Сортировка</p>
@@ -132,8 +141,11 @@
 
       <div class="result">
 
-        <div class="hotel">
-          <img class="hotel-photo" src="img/hotel-1.jpg" width="135" height="90">
+        <div class="hotel clearfix">
+
+          <div class="hotel-photo">
+            <img src="img/hotel-1.jpg" width="135" height="90">
+          </div>
 
           <div class="hotel-descr">
 
@@ -160,8 +172,10 @@
 
         </div>
 
-        <div class="hotel">
-          <img class="hotel-photo" src="img/hotel-2.jpg" width="135" height="90">
+        <div class="hotel clearfix">
+          <div class="hotel-photo">
+            <img src="img/hotel-2.jpg" width="135" height="90">
+          </div>
 
           <div class="hotel-descr">
 
@@ -188,8 +202,11 @@
 
         </div>
 
-        <div class="hotel">
-          <img class="hotel-photo" src="img/hotel-3.jpg" width="135" height="90">
+        <div class="hotel clearfix">
+
+          <div class="hotel-photo">
+            <img src="img/hotel-3.jpg" width="135" height="90">
+          </div>
 
           <div class="hotel-descr">
 
@@ -221,9 +238,9 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
 
-      <div class="container">
+
         <div class="footer-hashtag">
           <a class="hash" href="#">#visitsedona</a>
         </div>
@@ -240,7 +257,7 @@
             <img src="img/ha-logo.png" href="https://htmlacademy.ru" alt="HTML Academy">
           </a>
         </div>
-      </div>
+
 
     </footer>
 
