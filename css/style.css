@@ -43,7 +43,7 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+/*  padding: 0 40px; */
 
 
 
@@ -89,6 +89,13 @@ h3 {
 .background-photo {
   min-height: 510px;
   margin-bottom: 55px;
+/*  background: url(../img/background-photo.jpg) no-repeat,
+              url(../img/welcome-text.png) no-repeat; */
+
+  background: url(../img/welcome-text.png) no-repeat center center,
+              url(../img/shape-background.png) no-repeat bottom center,
+              url(../img/background-photo.jpg) no-repeat;
+
 }
 
 .info-about {
@@ -114,6 +121,17 @@ p {
 
    outline: 1px solid red;
 }
+
+.reason-img {
+  line-height: 0;
+}
+
+.reason-img h2,
+.reason-img p {
+  line-height: 21px;
+}
+
+
 
 .blue {
   background-color: #81b3d2;
@@ -262,6 +280,13 @@ p {
   float: left;
 
   outline: 1px solid red;
+}
+
+.info-container {
+  display: inline-block;
+  vertical-align: top;
+
+  outline: 1px solid yellow;
 }
 
 .rating {
