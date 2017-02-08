@@ -36,8 +36,8 @@
             <li>
               <a href="#">Карта штата</a>
             </li>
-            <li class="active">
-              <a>Гостиницы</a>
+            <li>
+              <a class="active">Гостиницы</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,8 @@
               <legend>Инфраструктура:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
-                  <input type="checkbox" id="chb-1" name="feature-1">
+                  <input type="checkbox" id="chb-1" name="feature-1" checked>
+
                   <label for="chb-1">Бассейн</label>
                 </li>
                 <li class="checkbox-item">
@@ -76,15 +77,15 @@
               <legend>Тип жилья:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-item">
-                  <input type="checkbox" id="chb-4" name="type-1">
+                  <input type="checkbox" id="chb-4" name="type-1" checked>
                   <label for="chb-4">Гостиница</label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" id="chb-5" name="type-2">
+                  <input type="checkbox" id="chb-5" name="type-2" checked>
                   <label for="chb-5">Мотель</label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" id="chb-6" name="type-3">
+                  <input type="checkbox" id="chb-6" name="type-3" checked>
                   <label for="chb-6">Апартаменты</label>
                 </li>
               </ul>
@@ -95,13 +96,19 @@
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
 
-              <label>От
-                <input class="cost_field" type="text" name="cost_from">
-              </label>
-              <label>До
-                <input class="cost_field" type="text" name="cost_to">
-              </label>
+              <div class="container-input">
+                <div class="cost-input">
+                  <label>От
+                    <input class="cost_field" type="text" name="cost_from" value="0">
+                  </label>
+                </div>
 
+                <div class="cost-input">
+                  <label>До
+                    <input class="cost_field" type="text" name="cost_to" value="3000">
+                  </label>
+                </div>
+              </div>
 
 
               <div class="range"></div> <!-- ползунок -->
@@ -122,20 +129,19 @@
         </div>
 
         <div class="sorting-settings">
-          <p>Сортировка</p>
+          <p>Сортировка:</p>
           <ul class="sorting-list">
-            <li><a class="sorting-type active-type" href="#">По цене</a></li>
-            <li><a class="sorting-type" href="#">По типу</a></li>
-            <li><a class="sorting-type" href="#">По рейтингу</a></li>
+            <li><a class="active-type" href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
         </div>
 
         <div class="sorting-indicator">
-          <ul class="indicators">
-            <li><a class="sort-down-up">снизу вверх</a></li>
-            <li><a class="sort-up-down active-indicator">сверху вниз</a></li>
+          <a class="arrow arrow-up active-arrow" href="#">по возрастанию</a>
+          <a class="arrow arrow-down" href="#">по убыванию</a>
             <!-- текст в ссылках скрою в css-->
-          </ul>
+
         </div>
 
       </div>
