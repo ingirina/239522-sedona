@@ -93,29 +93,25 @@
           </div>
 
           <div class="options">
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-
-              <div class="container-input">
-                <div class="cost-input">
-                  <label>От
-                    <input class="cost_field" type="text" name="cost_from" value="0">
-                  </label>
+        <!--    <div class="filter-range"> -->
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <div class="price-container">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                 </div>
-
-                <div class="cost-input">
-                  <label>До
-                    <input class="cost_field" type="text" name="cost_to" value="3000">
-                  </label>
+                <div class="price-container">
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
               </div>
-
-
-              <div class="range"></div> <!-- ползунок -->
-              <img src="img/price-range-temporary.png" width="318" height="43">
-            </fieldset>
-
-            <button class="show-btn" type="submit">Показать</button>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+        <!--    </div> -->
           </div>
 
         </form>
@@ -138,9 +134,9 @@
         </div>
 
         <div class="sorting-indicator">
-          <a class="arrow arrow-up active-arrow" href="#">по возрастанию</a>
-          <a class="arrow arrow-down" href="#">по убыванию</a>
-            <!-- текст в ссылках скрою в css-->
+          <a class="arrow arrow-up" href="#">по возрастанию</a>
+          <a class="arrow arrow-down active-arrow" href="#">по убыванию</a>
+
 
         </div>
 
@@ -155,23 +151,23 @@
           </div>
 
           <div class="hotel-descr">
-
-            <h2 class="hotel-title">Amara Resort & Spa</h2>
-
+            <a class="link-hotel" href="#">
+              <h2 class="hotel-title">Amara Resort & Spa</h2>
+            </a>
             <div class="info-container">
               <span class="hotel-info">Гостиница</span>
               <a class="btn hotel-about" href="#">Подробнее</a>
             </div>
 
             <div class="info-container">
-              <span class="hotel-info">От 3500 Р.</span>
+              <span class="hotel-info">От 4000 Р.</span>
               <a class="btn hotel-book" href="#">Забронировать</a>
             </div>
 
           </div>
 
-          <div class="rating">
-            <span class="rating-stars"></span>
+          <div class="rating four-star">
+
             <div class="rating-value">
               <span class="value">Рейтинг: 8,5</span>
             </div>
@@ -185,23 +181,23 @@
           </div>
 
           <div class="hotel-descr">
-
-            <h2 class="hotel-title">Desert Quail Inn</h2>
-
+            <a class="link-hotel" href="#">
+              <h2 class="hotel-title">Desert Quail Inn</h2>
+            </a>
             <div class="info-container">
               <span class="hotel-info">Мотель</span>
               <a class="btn hotel-about" href="#">Подробнее</a>
             </div>
 
             <div class="info-container">
-              <span class="hotel-info">От 2000 Р.</span>
+              <span class="hotel-info">От 3000 Р.</span>
               <a class="btn hotel-book" href="#">Забронировать</a>
             </div>
 
           </div>
 
-          <div class="rating">
-            <span class="rating-stars"></span>
+          <div class="rating three-star">
+
             <div class="rating-value">
               <span class="value">Рейтинг: 8,9</span>
             </div>
@@ -216,23 +212,23 @@
           </div>
 
           <div class="hotel-descr">
-
-            <h2 class="hotel-title">Villas at Poco Diablo</h2>
-
+            <a class="link-hotel" href="#">
+              <h2 class="hotel-title">Villas at Poco Diablo</h2>
+            </a>
             <div class="info-container">
               <span class="hotel-info">Апартаменты</span>
               <a class="btn hotel-about" href="#">Подробнее</a>
             </div>
 
             <div class="info-container">
-              <span class="hotel-info">От 4000 Р.</span>
+              <span class="hotel-info">От 2000 Р.</span>
               <a class="btn hotel-book" href="#">Забронировать</a>
             </div>
 
           </div>
 
-          <div class="rating">
-            <span class="rating-stars"></span>
+          <div class="rating two-star">
+
             <div class="rating-value">
               <span class="value">Рейтинг: 9,2</span>
             </div>
@@ -260,9 +256,7 @@
 
         <div class="footer-copyright">
           <p>Website by</p>
-          <a class="copyright" href="https://htmlacademy.ru">
-            <img src="img/ha-logo.png" href="https://htmlacademy.ru" alt="HTML Academy">
-          </a>
+          <a class="copyright" href="https://htmlacademy.ru"></a>
         </div>
 
 
