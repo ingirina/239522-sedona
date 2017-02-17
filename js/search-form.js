@@ -10,14 +10,6 @@ var children_amount = popup.querySelector("[name=children-amt]");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
-  if (close==1) {
-    popup.classList.remove("close-search-window");
-    close=0;
-  /*  console.log(close); */
-  }
-  else {
-    popup.classList.add("close-search-window");
-    close=1;
-/*    console.log(close); */
-  }
+  popup.classList.toggle("close-search-window");
+
 });
