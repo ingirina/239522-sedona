@@ -7,149 +7,115 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
   <div class="container">
+
     <header class="main-header clearfix">
-
-
       <div class="logo">
         <img src="img/logo.png" width="138" height="70" alt="Седона">
       </div>
-
       <nav class="main-navigation">
-
-          <div class="menu-left">
-            <ul>
-              <li>
-                <a href="#">Информация</a>
-              </li>
-              <li>
-                <a href="#">Фото и видео</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-right">
-            <ul>
-              <li>
-                <a href="#">Карта штата</a>
-              </li>
-              <li>
-                <a href="hotels.html">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
-
-
+        <div class="menu-left">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <ul>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
     </header>
 
     <main>
-
-
       <div class="background-photo">
+        <img class="background-mountains" src="img/background-photo-1200.jpg" width="1200" height="508" alt="Mountains">
       </div>
-
-
-      <p class="info-about">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+      <p class="info-about">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="reasons-about">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
-
-
       <div class="reason-img clearfix">
         <div class="reason blue">
           <h2>Настоящий городок</h2>
-          <p>— №1 —</p>
+          <span>— №1 —</span>
           <p class="reason-descr">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-
         </div>
-
-          <img src="img/town-photo.jpg" width="800" height="256">
+        <img src="img/town-photo.jpg" width="800" height="256" alt="Настоящий городок">
       </div>
-
-
       <div class="features clearfix">
         <div class="feature">
-
-          <img src="img/hotel-icon-slice.png" width="75" height="76">
+          <img src="img/hotel-icon-slice.png" width="75" height="76" alt="Жилье">
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-
         <div class="feature">
-          <img src="img/food-icon-slice.png" width="76" height="76">
+          <img src="img/food-icon-slice.png" width="76" height="76" alt="Еда">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-
         <div class="feature">
-          <img src="img/souvenir-icon-slice.png" width="76" height="76">
+          <img src="img/souvenir-icon-slice.png" width="76" height="76" alt="Сувениры">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </div>
-
-
       <div class="reason-img clearfix">
-
-          <img src="img/mountains-photo.jpg" width="800" height="256">
-
+        <img src="img/mountains-photo.jpg" width="800" height="256" alt="Мост дьявола">
         <div class="reason blue pos-right">
           <h2>Там есть<br> мост дьявола</h2>
-          <p>— №2 —</p>
+          <span>— №2 —</span>
           <p class="reason-descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
-
-
       <div class="reasons clearfix">
         <div class="reason">
           <h2>Небольшая площадь</h2>
-          <p>— №3 —</p>
+          <span>— №3 —</span>
           <p class="reason-descr">Вce достопримечательности находятся очень близко</p>
         </div>
-
         <div class="reason">
           <h2>Красивая дорога</h2>
-          <p>— №4 —</p>
+          <span>— №4 —</span>
           <p class="reason-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-
         <div class="reason">
           <h2>Мало туристов</h2>
-          <p>— №5 —</p>
+          <span>— №5 —</span>
           <p class="reason-descr">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
-
       <div class="search-block">
         <b>Заинтересовались?</b>
         <p class="form-descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="search-form search-button" href="#">Поиск гостиницы в седоне</a>
-
         <div class="search-window">
-
           <form class="search-window-form" action="#" method="post">
-
             <div class="check-in-out-container clearfix">
               <label for="check-in">Дата заезда:</label>
               <div class="calendar-container">
-                <input class="search-date" type="text" name="check-in" value="24 апреля 2017">
+                <input class="search-date" type="text" id="check-in" name="check-in" value="24 апреля 2017">
                 <button class="calendar" type="button" name="check-in-calendar">календарь</button>
               </div>
             </div>
-
             <div class="check-in-out-container clearfix">
               <label for="check-out">Дата выезда:</label>
               <div class="calendar-container">
-                <input class="search-date" type="text" name="check-out" value="4 июля 2017">
+                <input class="search-date" type="text" id="check-out" name="check-out" value="4 июля 2017">
                 <button class="calendar" type="button" name="check-in-calendar">календарь</button>
               </div>
             </div>
-
             <div class="counters-container clearfix">
-
               <div class="counter-container">
                 <label for="adults">Взрослые:</label>
                 <div class="counter">
@@ -158,7 +124,6 @@
                   <button class="plus" type="button" name="adults-plus">плюс 1</button>
                 </div>
               </div>
-
               <div class="counter-container">
                 <label for="children">Дети:</label>
                 <div class="counter">
@@ -167,45 +132,29 @@
                   <button class="plus" type="button" name="children-plus">плюс 1</button>
                 </div>
               </div>
-
             </div>
-
             <button class="search-btn" type="submit">Найти</button>
           </form>
-
         </div>
       </div>
-
       <div class="map">
-    <!--    <img src="img/map.jpg" width="1200" height="593"> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8880953883!2d-112.35544173015923!3d34.854373381055396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336!5e0!3m2!1sen!2sus!4v1487306105753" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8880953883!2d-112.35544173015923!3d34.854373381055396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336!5e0!3m2!1sen!2sus!4v1487306105753" width="1200" height="593" style="border:0" allowfullscreen></iframe>
       </div>
-
-
     </main>
 
     <footer class="main-footer position-absolute clearfix">
-
-
       <div class="footer-hashtag">
         <a class="hash" href="#">#visitsedona</a>
       </div>
-
       <div class="footer-social">
         <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
       </div>
-
       <div class="footer-copyright">
         <p>Website by</p>
-        <a class="copyright" href="https://htmlacademy.ru">
-    <!--      <img src="img/ha-logo.png" width="113" height="39" alt="HTML Academy"> -->
-        </a>
+        <a class="copyright" href="https://htmlacademy.ru"></a>
       </div>
-
-
     </footer>
   </div>
 
